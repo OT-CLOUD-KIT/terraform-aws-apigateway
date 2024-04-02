@@ -30,7 +30,7 @@ locals {
   tags = { "Environment" : "test", "Client" : "DevOps", "Project" : "Demo", "Organisation" : "opstree" }
 }
 
-#Create simple Redis cluster with one node in disabled mode.
+#Create API .
 module "APIGateway" {
   source = "./"
   rest_api_name = var.rest_api_name
@@ -70,3 +70,8 @@ module "APIGateway" {
 
 #
 ## Contributors
+|  [![Reena Nain][Reena_avatar]][Reena_homepage]<br/>[Reena Nain][Reena_homepage] |
+
+
+  [reena_homepage]: https://gitlab.com/reena.nain 
+  [reena_avatar]: https://gitlab.com/uploads/-/system/user/avatar/9292330/avatar.png?width=400

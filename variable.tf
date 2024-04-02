@@ -11,23 +11,23 @@ variable "enable_rest_api" {
 
 variable "types" {
   description = "List of endpoint types."
-  default = ["EDGE"]
+  default     = ["EDGE"]
 }
 
 variable "description" {
   description = "Description of the REST API."
-  default = "API Service"
+  default     = "API Service"
 }
 
 variable "binary_media_types" {
   description = "List of binary media types supported by the REST API."
-  default = ["image/jpeg",]
+  default     = ["image/jpeg", ]
 }
 
 variable "websocket_api_name" {
   type        = string
   description = "Name of the WebSocket API"
-  default = "default"
+  default     = "default"
 }
 
 variable "websocket_api_protocol" {
@@ -39,7 +39,7 @@ variable "websocket_api_protocol" {
 variable "websocket_api_route_selection_expression" {
   type        = string
   description = "WebSocket API Route Selection Eexpression"
-  default = "default"
+  default     = "default"
 }
 
 variable "enable_websocket_api" {

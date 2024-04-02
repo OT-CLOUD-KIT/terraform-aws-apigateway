@@ -5,7 +5,7 @@ output "api_gateway_id" {
 
 output "root_resource_id" {
   description = "Set to the ID of the API Gateway Resource on the found REST API where the route matches '/'."
-  value = var.enable_rest_api == true ? aws_api_gateway_rest_api.rest_api.*.root_resource_id[0] : 0
+  value       = var.enable_rest_api == true ? aws_api_gateway_rest_api.rest_api.*.root_resource_id[0] : 0
 }
 
 output "websocket_api_id" {
