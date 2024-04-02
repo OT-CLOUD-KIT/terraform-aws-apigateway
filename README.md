@@ -1,9 +1,14 @@
 # API Gateway
 
-[![Opstree Solutions][opstree_avatar]][opstree_homepage]<br/>[Opstree Solutions][opstree_homepage] 
+=====================================
+
+[![Opstree Solutions][opstree_avatar]][opstree_homepage]
+
+[Opstree Solutions][opstree_homepage] 
 
   [opstree_homepage]: https://opstree.github.io/
-  [opstree_avatar]: https://img.cloudposse.com/200x100/https://www.opstree.com/images/og_image8.jpg
+  [opstree_avatar]: https://img.cloudposse.com/150x150/https://github.com/opstree.png
+  
   - This terraform module will create a API Gateway.
   - This project is a part of opstree's ot-aws initiative for terraform modules.
 
