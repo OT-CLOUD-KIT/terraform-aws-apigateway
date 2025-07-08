@@ -11,6 +11,7 @@ It enables seamless integration with AWS Lambda or HTTP backends, and includes f
 ---
 
 ## Architecture
+![image](https://github.com/user-attachments/assets/2d5a251a-a84e-4280-8c1e-332a67836824)
 
 
 > The module allows creating REST, HTTP, and WebSocket APIs independently or together, with optional integration to Lambda or HTTP backends.
