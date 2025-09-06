@@ -1,23 +1,3 @@
-module "naming" {
-  source   = "git@github.com:OT-CLOUD-KIT/terraform-aws-naming.git?ref=dev"
-  bu       = var.bu
-  env      = var.env
-  app      = var.app
-  tenant   = var.tenant
-  resource = var.resource
-}
-
-module "standard_tags" {
-  source = "git@github.com:OT-CLOUD-KIT/terraform-aws-standard-tagging.git?ref=dev"
-
-  bu      = var.bu
-  program = var.program
-  app     = var.app
-  team    = var.team
-  region  = var.region
-  env     = var.env
-}
-
 
 module "apigateway" {
   source = "git@github.com:OT-CLOUD-KIT/terraform-aws-apigateway.git?ref=Feature"
@@ -33,9 +13,7 @@ module "apigateway" {
   http_api_integration_type = var.http_api_integration_type
   http_api_lambda_arn       = var.http_api_lambda_arn
   http_api_backend_url      = var.http_api_backend_url
-  bu                        = var.bu
-  program                   = var.program
-  team                      = var.team
+  owner   = var.owner
   app                       = var.app
   env                       = var.env
   websocket_stage_name                     = var.websocket_stage_name
